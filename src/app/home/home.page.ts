@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component,  OnInit } from '@angular/core';
+import{ActivatedRoute, Router} from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -7,6 +8,22 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+  constructor(private activeroute: ActivatedRoute, private router: Router) {}
+
+  navegar(){
+    this.router.navigate(['/cursos-prof']);
+    this.activeroute.queryParams.subscribe(() => {
+
+
+
+      console.log( this.router.getCurrentNavigation()?.extras.state?.['nombre']);
+
+      console.log(this.router.getCurrentNavigation()?.extras.state?.['id']);
+
+
+
+    });
+  }
+
 
 }

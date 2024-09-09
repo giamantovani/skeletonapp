@@ -1,0 +1,35 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title>Alumno</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+
+  <div class="profile-container">
+    <ion-avatar>
+      <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+    </ion-avatar>
+    <h2>Alumna Carla</h2>
+    <h3>PGY4121 Aplicaciones Móviles</h3>
+  </div>
+
+  <div class="qr-container">
+        <ion-img src="assets/lector.png" class="qr-image"></ion-img>
+  </div>
+  <ion-button expand="full" fill="clear" color="primary" (click)="navegar()">
+    Tomar otra clase
+  </ion-button>
+
+    <!--<ion-button expand="block" color="secondary" fill="outline" [routerLink]="['/cursos-prof']">Perfil</ion-button>
+    <ion-button expand="block" color="secondary" fill="outline" [routerLink]="['/cursos-prof']">Ajustes</ion-button>
+  </div>-->
+
+  <div class="options-container">
+    <ion-button (click)='navegar()' expand="block" color="secondary">Ver mis cursos</ion-button>
+    <ion-button expand="block" color="secondary" fill="outline" [routerLink]="['/perfil-alumno']">Perfil</ion-button>
+    <ion-button expand="block" color="secondary" fill="outline" [routerLink]="['/perfil-alumno']">Ajustes</ion-button>
+  </div>
+
+</ion-content>
+

@@ -1,0 +1,41 @@
+.logo-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.logo-container ion-img {
+  width: 400px;
+  height: auto;
+}
+
+.login-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.forgot-password {
+  display: block;
+  text-align: center;
+  margin-top: 1rem;
+  color: #3880ff;
+  text-decoration: none;
+}
+
+.bottom-image-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.bottom-image-container ion-img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

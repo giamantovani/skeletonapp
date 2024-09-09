@@ -8,8 +8,24 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'login',
     pathMatch: 'full'
+  },
+  {
+    path: 'login',
+    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
+  },
+  {
+    path: 'cursos-prof',
+    loadChildren: () => import('./cursos-prof/cursos-prof.module').then( m => m.CursosProfPageModule)
+  },
+  {
+    path: 'perfil-alumno',
+    loadChildren: () => import('./perfil-alumno/perfil-alumno.module').then( m => m.PerfilAlumnoPageModule)
+  },
+  {
+    path: 'cursos-alum',
+    loadChildren: () => import('./cursos-alum/cursos-alum.module').then( m => m.CursosAlumPageModule)
   },
 ];
 

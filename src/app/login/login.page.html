@@ -1,0 +1,37 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="login-conten">
+  <div class="logo-container">
+    <ion-img src="assets/logo_DuocUC.png"></ion-img>
+  </div>
+
+  <div class="login-container">
+  <form [formGroup]="usuario">
+    <ion-item>
+      <ion-label position="floating">Correo</ion-label>
+      <ion-input label="User" type="email" placeholder="Escribe tu correo"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Contraseña</ion-label>
+      <ion-input label="Pass" type="password" placeholder="Escribe tu contraseña"></ion-input>
+      <ion-input-password-toggle slot="end"></ion-input-password-toggle>
+    </ion-item>
+    <ion-button expand="block" color="success" (click)="navegarExtras()" fill="outline">Navigate Extras</ion-button>
+  </form>
+
+    <ion-button (click)='navegar()' expand="block" color="primary">Ingresar</ion-button>
+    <ion-button expand="block" color="secondary" fill="outline" [routerLink]="['/perfil-alumno']">Alumno</ion-button>
+
+    <a href="#" class="forgot-password">¿Olvidaste tu contraseña?</a>
+  </div>
+
+  <div class="bottom-image-container">
+    <ion-img src="assets/acreditacion.jpg"></ion-img>
+  </div>
+
+</ion-content>
+

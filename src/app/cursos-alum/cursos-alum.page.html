@@ -1,0 +1,23 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title>Alumno</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+
+  <div class="profile-container">
+    <ion-avatar>
+      <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+    </ion-avatar>
+    <h2>Alumna Carla</h2>
+  </div>
+
+
+  <ion-button (click)='navegar()' expand="block" color="primary">PGY4121 APLICACIONES MOVILES</ion-button>
+
+
+  <div class="options-container">
+    <ion-button expand="block" color="secondary" fill="outline" [routerLink]="['/perfil-alumno']">ASY4131 ARQUITECTURA</ion-button>
+    <ion-button expand="block" color="secondary" fill="outline" [routerLink]="['/perfil-alumno']">CSY4111 CALIDAD DE SOFTWARE</ion-button>
+  </div>
