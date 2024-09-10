@@ -1,0 +1,29 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Profesor X</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button color="warning"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="prof-theme">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Elige una Asignatura</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <!-- Lista de asignaturas -->
+      <ion-list>
+        <ion-button [routerLink]="['/codigoqr']" class="custom-button" fill="outline">Aplicaciones Moviles
+          007V</ion-button>
+        <ion-button [routerLink]="['/codigoqr']" class="custom-button" fill="outline">Programacion Web
+          619V</ion-button>
+        <ion-button [routerLink]="['/codigoqr']" class="custom-button" fill="outline">Portafolio 322D</ion-button>
+        <ion-button [routerLink]="['/codigoqr']" class="custom-button" fill="outline">Aplicaciones Moviles
+          696D</ion-button>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
